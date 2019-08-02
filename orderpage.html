@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Order page for Under the Swell, a small custom leatherwork business. Here customers can tell us about the custom product they want, and exactly how they want it.">
+    <title>Under the Swell - Place an Order</title>
+    <link rel="stylesheet" href="/css/orderpage.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <img id="headerimage" src="/images/orderheader.JPG" alt="Sunset on the Swell" />
+        </div>
+
+        <div class="topmenu">
+            <ul class="navmenu">
+                <li><a href="/HTML/homepage.html">Home</a></li>
+                <li><a href="/HTML/Aboutpage.html">About</a></li>
+                <li><a href="/HTML/productspage.html">The Goods</a></li>
+                <li><a href="/HTML/portfoliopage.html">What We've Done</a></li>
+                <li><a href="/HTML/orderpage.html">Place an Order</a></li>
+            </ul>
+        </div>
+        <div id="maincontent">
+         <form name="LeatherOrder" method="get" action="#">
+            <div id="product">
+                <label for="productselect">What kind of product would you like?</label><br>
+                <select id="productselect">
+                    <option value="b">Belt</option>
+                    <option value="k">Knife Scabbard</option>
+                    <option value="ph">Phone Scabbard</option>
+                    <option value="po">Portfolio Cover</option>
+                    <option value="pu">Purse or Briefcase</option>
+                    <option value="c">Cardholder</option>
+                    <option value="w">Wallet</option>
+                    <option value="t">Tack</option>
+                    <option value="h">Hats</option>
+                    <option value="j">Jewelry</option>
+                    <option value="o">Other</option>
+                </select><br>
+                <div id="otherbox">
+                <label>If you selected other, please specify here:</label><br>
+                <textarea rows="3" cols="25"></textarea>
+                </div>
+                <div id="moreinfo">
+                <label>Please tell us more about the product you are ordering. Who is it for? Do you have specific requests?</label><br>
+                <textarea rows="3" cols="100"></textarea>
+                </div>
+            </div>
+            
+            <div id="selectables">
+                <label id="select">What are some of the things you need on your product?<span>(Check all that Apply)</span></label><br>
+            </div>
+            <div id="options">
+                <input type="checkbox" name="op1" value="tooling">Detailed Tooling<br>
+                <input type="checkbox" name="op2" value="lettering">Custom Lettering<br>
+                <input type="checkbox" name="op3" value="shops">Painting<br>
+                <input type="checkbox" name="op4" value="snaps">Snaps<br>
+                <input type="checkbox" name="op5" value="buckles">Buckles<br>
+                <input type="checkbox" name="op6" value="concho">Conchos<br>
+            </div>
+            <div id="commentbox">
+                <label>Additional Comments or Suggestions:</label><br>
+                <textarea rows="3" cols="100"></textarea>
+            </div>
+            <div id="email">
+                Please leave an email where we can contact you:
+                <input id="em" type="email" name="email">
+            </div>
+            <div id="phonenumber">
+                Please leave a phone number where we can contact you:
+                <input id="num" type="number" name="phone_number">
+            </div>
+            <div id="submit">
+                We will contact you to discuss payment and other details upon submission of this form. Thank you, and have a nice day.<br>
+                <input id="sb" type="submit" value="Submit">
+            </div>
+        </form>
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+</body>
+
+</html>
